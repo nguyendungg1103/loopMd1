@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let x = 1
+    let min = +prompt("Từ");
+    let max = +prompt("Đến");
+    let randonNum = Math.floor(Math.random() * (max - min) + min);
+    while (x <= 1) {
+        let answer = +prompt("Guess number: ");
+        if (answer == randonNum) {
+            alert("Congratulation!");
+            x++;
+        } else if (answer == "") {
+            break;
+        } else if (answer > randonNum) {
+            alert("Nho hon");
+        } else if (answer < randonNum) {
+            alert("Lon hon");
+        } else {
+            alert("sai");
+        }
+    }
+
+
+</script>
+
+
+</body>
+</html>
